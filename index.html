@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Lype Barber | Barbearia Premium em Fortaleza</title>
+
+<meta name="description" content="Lype Barber — Barbearia premium em Fortaleza com cortes modernos, barba, pigmentação e experiência de alto padrão. Agende seu horário agora."/>
+<meta name="keywords" content="barbearia premium, barbeiro fortaleza, corte masculino, barba, fade, degradê, lype barber"/>
+<meta name="author" content="Lype Barber"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#080808"/>
+<link rel="canonical" href="https://lypebarber.com"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Lype Barber | Barbearia Premium"/>
+<meta property="og:description" content="Estilo, precisão e atitude. Conheça a experiência premium da Lype Barber."/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200"/>
+<meta property="og:url" content="https://lypebarber.com"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Lype Barber"/>
+<meta name="twitter:description" content="Barbearia premium em Fortaleza."/>
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Barbershop",
+"name":"Lype Barber",
+"image":"https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200",
+"telephone":"+55 85 99620-4474",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"Rua Olímpio Ribeiro, 219",
+"addressLocality":"Fortaleza",
+"addressRegion":"CE",
+"addressCountry":"BR"
+},
+"url":"https://lypebarber.com",
+"priceRange":"$$",
+"openingHours":[
+"Mo-Fr 09:00-20:00",
+"Sa 09:00-19:00"
+]
+}
+</script>
+
+<style>
+
+:root{
+--gold:#C9A84C;
+--gold-soft:#e5c66b;
+--black:#080808;
+--black2:#111;
+--white:#fff;
+--gray:#bdbdbd;
+--card:#151515;
+--transition:.4s ease;
+--radius:22px;
+--shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Barlow',sans-serif;
+background:var(--black);
+color:var(--white);
+overflow-x:hidden;
+}
+
+body::-webkit-scrollbar{
+width:8px;
+}
+
+body::-webkit-scrollbar-thumb{
+background:var(--gold);
+border-radius:50px;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button,input,select,textarea{
+font-family:inherit;
+outline:none;
+border:none;
+}
+
+.skip-link{
+position:absolute;
+top:-50px;
+left:20px;
+background:var(--gold);
+color:#000;
+padding:12px 18px;
+z-index:9999;
+border-radius:10px;
+font-weight:700;
+transition:.3s;
+}
+
+.skip-link:focus{
+top:20px;
+}
+
+.progress{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:linear-gradient(90deg,var(--gold),#fff0a8);
+z-index:9999;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+backdrop-filter:blur(15px);
+background:rgba(0,0,0,.65);
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+nav{
+max-width:1300px;
+margin:auto;
+padding:18px 25px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-family:'Bebas Neue',sans-serif;
+font-size:2rem;
+letter-spacing:3px;
+color:var(--gold);
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+position:relative;
+font-weight:600;
+}
+
+.nav-links a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:var(--gold);
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.menu-btn{
+display:none;
+font-size:1.8rem;
+color:var(--gold);
+cursor:pointer;
+}
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:140px 8%;
+position:relative;
+overflow:hidden;
+}
+
+#particles{
+position:absolute;
+inset:0;
+z-index:0;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,var(--gold),transparent 70%);
+opacity:.08;
+top:-200px;
+right:-100px;
+filter:blur(30px);
+}
+
+.diagonal{
+position:absolute;
+bottom:-120px;
+left:-10%;
+width:120%;
+height:180px;
+background:
+repeating-linear-gradient(
+45deg,
+rgba(201,168,76,.09),
+rgba(201,168,76,.09) 10px,
+transparent 10px,
+transparent 20px
+);
+transform:rotate(-4deg);
+z-index:1;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-family:'Bebas Neue',sans-serif;
+font-size:6rem;
+line-height:.9;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:var(--gold);
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:550px;
+line-height:1.8;
+color:var(--gray);
+}
+
+.typewriter{
+margin:25px 0;
+font-size:1.4rem;
+font-weight:700;
+color:var(--gold);
+height:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 28px;
+border-radius:50px;
+font-weight:700;
+cursor:pointer;
+transition:var(--transition);
+position:relative;
+overflow:hidden;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+}
+
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+.btn-secondary{
+border:1px solid rgba(255,255,255,.15);
+background:#111;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.hero-visual{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+z-index:2;
+}
+
+.frame{
+width:420px;
+height:520px;
+border-radius:40px;
+border:1px solid rgba(201,168,76,.35);
+background:linear-gradient(145deg,#0d0d0d,#1a1a1a);
+position:relative;
+overflow:hidden;
+box-shadow:var(--shadow);
+}
+
+.frame::before{
+content:'';
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at top left,rgba(201,168,76,.15),transparent 40%);
+}
+
+.pattern{
+position:absolute;
+inset:0;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:.9;
+}
+
+.pattern svg{
+width:75%;
+height:75%;
+}
+
+.marquee{
+padding:18px 0;
+overflow:hidden;
+border-top:1px solid rgba(255,255,255,.06);
+border-bottom:1px solid rgba(255,255,255,.06);
+background:#0d0d0d;
+}
+
+.marquee-track{
+display:flex;
+width:max-content;
+animation:marquee 18s linear infinite;
+gap:60px;
+font-family:'Oswald',sans-serif;
+font-size:1.2rem;
+color:var(--gold);
+}
+
+@keyframes marquee{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+
+section{
+padding:110px 8%;
+position:relative;
+}
+
+.section-title{
+font-family:'Bebas Neue',sans-serif;
+font-size:4rem;
+letter-spacing:3px;
+margin-bottom:15px;
+}
+
+.section-sub{
+color:var(--gray);
+margin-bottom:50px;
+max-width:700px;
+line-height:1.8;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.flip-card{
+perspective:1000px;
+height:320px;
+}
+
+.flip-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform .8s;
+transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-inner{
+transform:rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+position:absolute;
+inset:0;
+border-radius:var(--radius);
+padding:35px;
+background:var(--card);
+backface-visibility:hidden;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card-back{
+transform:rotateY(180deg);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.card-front::before{
+content:'';
+position:absolute;
+top:0;
+left:-120%;
+width:80%;
+height:100%;
+background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+transform:skewX(-20deg);
+transition:1s;
+}
+
+.flip-card:hover .card-front::before{
+left:150%;
+}
+
+.service-icon{
+width:70px;
+height:70px;
+margin-bottom:25px;
+background:rgba(201,168,76,.08);
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.service-icon svg{
+width:36px;
+height:36px;
+fill:var(--gold);
+}
+
+.card-front h3{
+font-size:1.5rem;
+margin-bottom:15px;
+}
+
+.price{
+font-size:2rem;
+font-weight:700;
+color:var(--gold);
+margin-top:20px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-box{
+height:450px;
+border-radius:30px;
+background:linear-gradient(145deg,#0e0e0e,#1b1b1b);
+border:1px solid rgba(255,255,255,.05);
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+.timeline{
+display:flex;
+justify-content:space-between;
+margin-top:40px;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.time-item{
+flex:1;
+min-width:120px;
+background:#121212;
+padding:20px;
+border-radius:20px;
+border:1px solid rgba(201,168,76,.15);
+text-align:center;
+}
+
+.counter{
+margin-top:30px;
+font-size:3rem;
+font-weight:700;
+color:var(--gold);
+}
+
+.gallery-grid{
+columns:3 260px;
+gap:18px;
+}
+
+.gallery-item{
+position:relative;
+margin-bottom:18px;
+border-radius:22px;
+overflow:hidden;
+cursor:pointer;
+background:#141414;
+border:1px solid rgba(255,255,255,.06);
+}
+
+.gallery-item img{
+width:100%;
+transition:.5s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.05);
+}
+
+.lightbox{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.92);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+padding:30px;
+}
+
+.lightbox.active{
+display:flex;
+}
+
+.lightbox img{
+max-width:900px;
+width:100%;
+border-radius:25px;
+}
+
+.lightbox-close{
+position:absolute;
+top:30px;
+right:40px;
+font-size:2rem;
+cursor:pointer;
+color:#fff;
+}
+
+.schedule-table{
+display:grid;
+gap:15px;
+}
+
+.day{
+padding:22px;
+border-radius:18px;
+background:#131313;
+display:flex;
+justify-content:space-between;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.day.active{
+border-color:var(--gold);
+background:rgba(201,168,76,.08);
+}
+
+.map-wrapper{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:25px;
+}
+
+.map iframe{
+width:100%;
+height:420px;
+border:none;
+border-radius:25px;
+filter:grayscale(1) invert(.9) contrast(1.2);
+}
+
+.route-card{
+background:#121212;
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.05);
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:20px;
+}
+
+.form-box{
+background:#121212;
+padding:45px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+background:#0e0e0e;
+padding:16px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,.08);
+color:#fff;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+border-color:var(--gold);
+}
+
+.testimonial-wrap{
+position:relative;
+overflow:hidden;
+}
+
+.testimonial-track{
+display:flex;
+transition:.8s;
+}
+
+.testimonial{
+min-width:100%;
+background:#121212;
+padding:45px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.06);
+}
+
+.avatar{
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.dots{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:25px;
+}
+
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+background:#444;
+cursor:pointer;
+}
+
+.dot.active{
+background:var(--gold);
+}
+
+footer{
+padding:70px 8%;
+border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+}
+
+.footer-item{
+opacity:0;
+transform:translateY(30px);
+transition:.8s;
+}
+
+.footer-item.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.float-buttons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:999;
+}
+
+.float-btn{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--gold);
+color:#000;
+font-size:1.4rem;
+box-shadow:var(--shadow);
+}
+
+.top-btn{
+position:fixed;
+left:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:var(--gold);
+color:#000;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+opacity:0;
+pointer-events:none;
+transition:.4s;
+z-index:999;
+}
+
+.top-btn.show{
+opacity:1;
+pointer-events:auto;
+}
+
+.toast{
+position:fixed;
+top:30px;
+right:30px;
+background:var(--gold);
+color:#000;
+padding:16px 22px;
+border-radius:14px;
+font-weight:700;
+opacity:0;
+pointer-events:none;
+transition:.4s;
+z-index:9999;
+}
+
+.toast.show{
+opacity:1;
+}
+
+.focus-visible:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+outline:2px solid var(--gold);
+outline-offset:3px;
+}
+
+@media(max-width:991px){
+
+.hero,
+.about,
+.map-wrapper{
+grid-template-columns:1fr;
+}
+
+.hero{
+text-align:center;
+padding-top:170px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero h1{
+font-size:4.5rem;
+}
+
+.frame{
+width:100%;
+max-width:430px;
+height:430px;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+position:fixed;
+top:80px;
+right:-100%;
+width:280px;
+height:calc(100vh - 80px);
+background:#0d0d0d;
+flex-direction:column;
+padding:40px;
+transition:.4s;
+}
+
+.nav-links.active{
+right:0;
+}
+
+.menu-btn{
+display:block;
+}
+
+}
+
+@media(max-width:768px){
+
+.section-title{
+font-size:3rem;
+}
+
+.hero h1{
+font-size:3.7rem;
+}
+
+}
+
+@media(max-width:425px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.frame{
+height:340px;
+}
+
+section{
+padding:90px 5%;
+}
+
+nav{
+padding:18px 5%;
+}
+
+}
+
+@media (prefers-reduced-motion: reduce){
+*{
+animation:none !important;
+transition:none !important;
+scroll-behavior:auto !important;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="#main" class="skip-link">Ir para o conteúdo</a>
+
+<div class="progress"></div>
+
+<div class="toast" id="toast">
+Número copiado com sucesso!
+</div>
+
+<header>
+<nav>
+
+<div class="logo">LYPE BARBER</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#horarios">Horários</a></li>
+<li><a href="#agendar-form">Agendar</a></li>
+</ul>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+</nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+
+<canvas id="particles"></canvas>
+
+<div class="diagonal"></div>
+
+<div class="hero-content">
+
+<h1>
+SEU VISUAL<br>
+<span>NUNCA PASSA</span><br>
+DESPERCEBIDO
+</h1>
+
+<div class="typewriter" id="typewriter"></div>
+
+<p>
+A experiência premium que transforma estilo em presença.
+Precisão nos detalhes, atendimento diferenciado e cortes que elevam sua identidade.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/5585996204474" class="btn btn-primary magnetic">
+Agendar Agora
+</a>
+
+<a href="#galeria" class="btn btn-secondary magnetic">
+Ver Trabalhos
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-visual">
+
+<div class="frame">
+
+<div class="pattern" aria-hidden="true">
+
+<svg viewBox="0 0 300 300">
+<g fill="none" stroke="#C9A84C" stroke-width="2">
+<circle cx="150" cy="150" r="110"/>
+<circle cx="150" cy="150" r="70"/>
+<path d="M50 150h200"/>
+<path d="M150 50v200"/>
+<path d="M80 80l140 140"/>
+<path d="M220 80L80 220"/>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="marquee">
+<div class="marquee-track">
+<div>FADE PREMIUM</div>
+<div>BARBA COMPLETA</div>
+<div>PIGMENTAÇÃO</div>
+<div>CORTE SOCIAL</div>
+<div>ESTILO • PRECISÃO • ATITUDE</div>
+<div>FADE PREMIUM</div>
+<div>BARBA COMPLETA</div>
+<div>PIGMENTAÇÃO</div>
+</div>
+</div>
+
+<section id="servicos">
+
+<h2 class="section-title">SERVIÇOS</h2>
+<p class="section-sub">
+Atendimento premium com acabamento impecável e experiência diferenciada.
+</p>
+
+<div class="services-grid">
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="card-front">
+
+<div class="service-icon">
+<svg viewBox="0 0 24 24">
+<path d="M6 2l3 8-5 5 2 2 5-5 8 3 2-2z"/>
+</svg>
+</div>
+
+<h3>Corte Degradê</h3>
+<p>Corte moderno com acabamento premium.</p>
+<div class="price">R$ 35</div>
+
+</div>
+
+<div class="card-back">
+
+<h3>Agende seu corte</h3>
+
+<a class="btn btn-primary"
+href="https://wa.me/5585996204474?text=Olá%20quero%20agendar%20o%20serviço%20Corte%20Degradê">
+Agendar
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="card-front">
+
+<div class="service-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2l10 10-10 10L2 12z"/>
+</svg>
+</div>
+
+<h3>Barba Premium</h3>
+<p>Modelagem e alinhamento profissional.</p>
+<div class="price">R$ 25</div>
+
+</div>
+
+<div class="card-back">
+
+<h3>Agende sua barba</h3>
+
+<a class="btn btn-primary"
+href="https://wa.me/5585996204474?text=Olá%20quero%20agendar%20o%20serviço%20Barba%20Premium">
+Agendar
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-inner">
+
+<div class="card-front">
+
+<div class="service-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+</svg>
+</div>
+
+<h3>Pigmentação</h3>
+<p>Definição moderna e natural.</p>
+<div class="price">R$ 20</div>
+
+</div>
+
+<div class="card-back">
+
+<h3>Agende agora</h3>
+
+<a class="btn btn-primary"
+href="https://wa.me/5585996204474?text=Olá%20quero%20agendar%20o%20serviço%20Pigmentação">
+Agendar
+</a>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<div class="about">
+
+<div>
+
+<h2 class="section-title">SOBRE O LYPE</h2>
+
+<p class="section-sub">
+O Lype Barber nasceu para elevar o padrão das barbearias modernas em Fortaleza,
+combinando estética premium, precisão e experiência.
+</p>
+
+<div class="timeline">
+
+<div class="time-item">
+<h3>2020</h3>
+<p>Início</p>
+</div>
+
+<div class="time-item">
+<h3>2022</h3>
+<p>Expansão</p>
+</div>
+
+<div class="time-item">
+<h3>2024</h3>
+<p>Premium</p>
+</div>
+
+<div class="time-item">
+<h3>Hoje</h3>
+<p>Referência</p>
+</div>
+
+</div>
+
+<div class="counter">
+<span id="counter">0</span>+
+</div>
+
+</div>
+
+<div class="about-box">
+
+<svg width="300" height="300" viewBox="0 0 300 300">
+<g fill="none" stroke="#C9A84C" stroke-width="3">
+<rect x="40" y="40" width="220" height="220" rx="20"/>
+<circle cx="150" cy="150" r="70"/>
+<path d="M80 80l140 140"/>
+<path d="M220 80L80 220"/>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2 class="section-title">NOSSOS TRABALHOS</h2>
+
+<p class="section-sub">
+Alguns estilos e resultados feitos na Lype Barber.
+</p>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img loading="lazy" alt="Corte masculino premium"
+src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800"/>
+</div>
+
+<div class="gallery-item">
+<img loading="lazy" alt="Barbearia moderna"
+src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=800"/>
+</div>
+
+<div class="gallery-item">
+<img loading="lazy" alt="Fade masculino"
+src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=800"/>
+</div>
+
+<div class="gallery-item">
+<img loading="lazy" alt="Corte social masculino"
+src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800"/>
+</div>
+
+<div class="gallery-item">
+<img loading="lazy" alt="Barba alinhada"
+src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800"/>
+</div>
+
+<div class="gallery-item">
+<img loading="lazy" alt="Barbeiro profissional"
+src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=80&w=800"/>
+</div>
+
+</div>
+
+</section>
+
+<div class="lightbox" id="lightbox">
+<div class="lightbox-close" id="closeLightbox">✕</div>
+<img id="lightboxImg" src="" alt="Imagem ampliada">
+</div>
+
+<section id="horarios">
+
+<h2 class="section-title">HORÁRIOS</h2>
+
+<div class="schedule-table">
+
+<div class="day active">
+<span>Segunda a Sexta</span>
+<span>09h às 20h</span>
+</div>
+
+<div class="day">
+<span>Sábado</span>
+<span>09h às 19h</span>
+</div>
+
+<div class="day">
+<span>Domingo</span>
+<span>Fechado</span>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">LOCALIZAÇÃO</h2>
+
+<div class="map-wrapper">
+
+<div class="map">
+
+<iframe
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade"
+src="https://www.google.com/maps?q=Rua%20Olímpio%20Ribeiro,%20219&output=embed">
+</iframe>
+
+</div>
+
+<div class="route-card">
+
+<h3>Como chegar</h3>
+
+<p>📍 Rua Olímpio Ribeiro, 219</p>
+<p>🚗 Fácil acesso e estacionamento próximo</p>
+<p>🚌 Transporte público nas redondezas</p>
+
+<button class="btn btn-primary" id="copyPhone">
+Copiar telefone
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="agendar-form">
+
+<h2 class="section-title">AGENDAR HORÁRIO</h2>
+
+<div class="form-box">
+
+<form id="bookingForm">
+
+<div class="form-grid">
+
+<div class="input-group">
+<label>Nome</label>
+<input type="text" id="nome" required>
+</div>
+
+<div class="input-group">
+<label>Serviço</label>
+<select id="servico">
+<option>Corte Degradê</option>
+<option>Barba Premium</option>
+<option>Pigmentação</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Data preferida</label>
+<input type="date" id="data" required>
+</div>
+
+<div class="input-group">
+<label>Horário</label>
+<input type="time" id="hora" required>
+</div>
+
+</div>
+
+<div class="input-group" style="margin-top:20px">
+<label>Mensagem</label>
+<textarea id="mensagem" rows="5"></textarea>
+</div>
+
+<button class="btn btn-primary" style="margin-top:25px">
+Enviar para WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">DEPOIMENTOS</h2>
+
+<div class="testimonial-wrap">
+
+<div class="testimonial-track" id="testimonialTrack">
+
+<div class="testimonial">
+
+<div class="avatar" style="background:linear-gradient(45deg,#C9A84C,#6d5314)">
+CF
+</div>
+
+<p>
+“Melhor experiência que já tive em barbearia.
+Atendimento impecável e corte perfeito.”
+</p>
+
+<h3 style="margin-top:20px">Carlos Felipe</h3>
+
+</div>
+
+<div class="testimonial">
+
+<div class="avatar" style="background:linear-gradient(45deg,#7f5a1f,#e5c66b)">
+EL
+</div>
+
+<p>
+“Ambiente premium e qualidade absurda nos detalhes.”
+</p>
+
+<h3 style="margin-top:20px">Elielton</h3>
+
+</div>
+
+<div class="testimonial">
+
+<div class="avatar" style="background:linear-gradient(45deg,#3b2b08,#C9A84C)">
+JS
+</div>
+
+<p>
+“Sem dúvidas a melhor barbearia da região.”
+</p>
+
+<h3 style="margin-top:20px">João Silva</h3>
+
+</div>
+
+</div>
+
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div class="footer-item">
+<h3>Lype Barber</h3>
+<p>Estilo • Precisão • Atitude</p>
+</div>
+
+<div class="footer-item">
+<h3>Contato</h3>
+<p>WhatsApp: (85) 99620-4474</p>
+</div>
+
+<div class="footer-item">
+<h3>Instagram</h3>
+<p>@elieltonbarber</p>
+</div>
+
+<div class="footer-item">
+<h3>Endereço</h3>
+<p>Rua Olímpio Ribeiro, 219</p>
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+<div class="float-buttons">
+
+<a
+href="https://wa.me/5585996204474"
+class="float-btn"
+aria-label="WhatsApp">
+W
+</a>
+
+<a
+href="https://instagram.com/elieltonbarber"
+class="float-btn"
+aria-label="Instagram">
+I
+</a>
+
+</div>
+
+<div class="top-btn" id="topBtn">↑</div>
+
+<audio id="clickSound">
+<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_c8c8a73467.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const typeText = "Estilo · Precisão · Atitude";
+let i = 0;
+
+function typeWriter(){
+if(i < typeText.length){
+document.getElementById("typewriter").innerHTML += typeText.charAt(i);
+i++;
+setTimeout(typeWriter,100);
+}
+}
+typeWriter();
+
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.onclick = () =>{
+navLinks.classList.toggle('active');
+};
+
+document.querySelectorAll('.nav-links a').forEach(link=>{
+link.addEventListener('click',()=>{
+navLinks.classList.remove('active');
+});
+});
+
+window.addEventListener('scroll',()=>{
+
+const scrollTop = window.scrollY;
+const docHeight = document.body.scrollHeight - window.innerHeight;
+const progress = (scrollTop / docHeight) * 100;
+
+document.querySelector('.progress').style.width = progress + '%';
+
+if(scrollTop > 400){
+document.getElementById('topBtn').classList.add('show');
+}else{
+document.getElementById('topBtn').classList.remove('show');
+}
+
+document.querySelector('.hero-content').style.transform =
+`translateY(${scrollTop * .15}px)`;
+
+});
+
+document.getElementById('topBtn').onclick = ()=>{
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+};
+
+const counter = document.getElementById('counter');
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+let count = 0;
+
+const interval = setInterval(()=>{
+
+count += 25;
+counter.innerText = count;
+
+if(count >= 2500){
+clearInterval(interval);
+}
+
+},20);
+
+observer.disconnect();
+
+}
+
+});
+
+});
+
+observer.observe(counter);
+
+const galleryItems = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+galleryItems.forEach(item=>{
+
+item.addEventListener('click',()=>{
+
+lightbox.classList.add('active');
+lightboxImg.src = item.src;
+
+});
+
+});
+
+document.getElementById('closeLightbox').onclick = ()=>{
+lightbox.classList.remove('active');
+};
+
+const track = document.getElementById('testimonialTrack');
+const dots = document.querySelectorAll('.dot');
+
+let current = 0;
+
+function showSlide(index){
+
+track.style.transform = `translateX(-${index * 100}%)`;
+
+dots.forEach(dot=>dot.classList.remove('active'));
+dots[index].classList.add('active');
+
+current = index;
+
+}
+
+dots.forEach((dot,index)=>{
+
+dot.addEventListener('click',()=>{
+showSlide(index);
+});
+
+});
+
+setInterval(()=>{
+
+current = (current + 1) % 3;
+showSlide(current);
+
+},5000);
+
+let startX = 0;
+
+track.addEventListener('touchstart',e=>{
+startX = e.touches[0].clientX;
+});
+
+track.addEventListener('touchend',e=>{
+
+let endX = e.changedTouches[0].clientX;
+
+if(startX - endX > 50){
+current = (current + 1) % 3;
+showSlide(current);
+}
+
+if(endX - startX > 50){
+current = (current - 1 + 3) % 3;
+showSlide(current);
+}
+
+});
+
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+
+e.preventDefault();
+
+const nome = document.getElementById('nome').value;
+const servico = document.getElementById('servico').value;
+const data = document.getElementById('data').value;
+const hora = document.getElementById('hora').value;
+const mensagem = document.getElementById('mensagem').value;
+
+const text =
+`Olá, meu nome é ${nome}.
+Quero agendar:
+Serviço: ${servico}
+Data: ${data}
+Horário: ${hora}
+Mensagem: ${mensagem}`;
+
+window.open(
+`https://wa.me/5585996204474?text=${encodeURIComponent(text)}`,
+'_blank'
+);
+
+});
+
+document.querySelectorAll('.btn').forEach(btn=>{
+
+btn.addEventListener('click',()=>{
+
+document.getElementById('clickSound').play();
+
+});
+
+});
+
+document.querySelectorAll('.magnetic').forEach(btn=>{
+
+btn.addEventListener('mousemove',e=>{
+
+const rect = btn.getBoundingClientRect();
+
+const x = e.clientX - rect.left - rect.width / 2;
+const y = e.clientY - rect.top - rect.height / 2;
+
+btn.style.transform = `translate(${x * .15}px, ${y * .15}px)`;
+
+});
+
+btn.addEventListener('mouseleave',()=>{
+
+btn.style.transform = '';
+
+});
+
+});
+
+document.getElementById('copyPhone').addEventListener('click',()=>{
+
+navigator.clipboard.writeText('85996204474');
+
+const toast = document.getElementById('toast');
+
+toast.classList.add('show');
+
+setTimeout(()=>{
+toast.classList.remove('show');
+},2500);
+
+});
+
+const footerItems = document.querySelectorAll('.footer-item');
+
+const footerObserver = new IntersectionObserver(entries=>{
+
+entries.forEach((entry,index)=>{
+
+if(entry.isIntersecting){
+
+setTimeout(()=>{
+entry.target.classList.add('show');
+},index * 150);
+
+}
+
+});
+
+});
+
+footerItems.forEach(item=>{
+footerObserver.observe(item);
+});
+
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<70;i++){
+
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2+1,
+d:Math.random()*1
+});
+
+}
+
+function drawParticles(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle = 'rgba(201,168,76,.7)';
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fill();
+
+});
+
+moveParticles();
+
+}
+
+let angle = 0;
+
+function moveParticles(){
+
+angle += .01;
+
+particles.forEach((p,i)=>{
+
+p.y += (Math.cos(angle + p.d) + 1 + p.r / 2) / 2;
+p.x += Math.sin(angle) * .5;
+
+if(p.x > canvas.width+5 || p.x < -5 || p.y > canvas.height){
+
+particles[i] = {
+x:Math.random()*canvas.width,
+y:-10,
+r:p.r,
+d:p.d
+};
+
+}
+
+});
+
+}
+
+setInterval(drawParticles,33);
+
+</script>
+
+</body>
+</html>
